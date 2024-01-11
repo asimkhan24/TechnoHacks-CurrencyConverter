@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(0, 157, 255);
+}
+
+.app-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.converter-container {
+  width: 500px;
+  padding: 60px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.converter-container h2 {
+  font-size: 25px;
+  color: rgb(2, 97, 157);
+  text-decoration: uppercase;
+  margin-bottom: 20px;
+}
+
+.app-icon {
+  margin-bottom: 20px;
+  width: 80px;
+}
+
+.converter-container .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.converter-container input,
+.converter-container select {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 8px rgba(0, 0, 0, 0.3);
+  appearance: none;
+}
+
+.converter-container input {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 12px 16px;
+  color: rgb(2, 97, 157);
+}
+.converter-container .select-container {
+  display: flex;
+  gap: 10px;
+}
+
+.converter-container .select-container select {
+  width: 100%;
+  margin-block: 8px;
+}
+
+.swap-btn {
+  width: 50px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.result {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  color: rgb(233, 228, 228);
+  background: rgb(2, 97, 157);
+  color: #fff;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4),
+    inset -2px -2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.result-currency {
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .converter-container {
+    width: 370px;
+  }
+  .converter-container h2 {
+    font-size: 20px;
+  }
+  .app-icon {
+    width: 70px;
+  }
+  .select-container select {
+    width: 115px;
+    height: 45px;
+  }
+}
